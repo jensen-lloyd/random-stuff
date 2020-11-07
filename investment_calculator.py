@@ -9,4 +9,4 @@ while True:
     for i in range(time):
         balance = balance*decimal_profit
 
-    print("\nEnd balance: " + str(balance) + "\n\n")
+    print("End balance: " + str(balance) + "\n")
