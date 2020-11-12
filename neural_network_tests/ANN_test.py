@@ -3,7 +3,7 @@ import numpy as np
 
 np.random.seed(0)
 
-X = [16299, 16251.62, 22117393860, 0.45192]
+X = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 
 class Layer:
@@ -41,11 +41,11 @@ class Layer:
 
 
 
-layer1 = Layer(4,4,'sigmoid')
-layer2 = Layer(4,6,'relu')
-layer3 = Layer(6,6,'relu')
-layer4 = Layer(6,6,'relu')
-layer5 = Layer(6,1,'sigmoid')
+layer1 = Layer(12,8,'sigmoid')
+layer2 = Layer(8,8,'sigmoid')
+layer3 = Layer(8,8,'sigmoid')
+layer4 = Layer(8,8,'sigmoid')
+layer5 = Layer(8,2,'relu')
 
 layer1.forward(X)
 layer2.forward(layer1.output)
@@ -57,9 +57,6 @@ print(layer5.output)
 
 
 # layer5.backpropagate(0)
-
-
-
 
 
 
